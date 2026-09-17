@@ -1,0 +1,3 @@
+17/09/2026 18:30:00 - Ruta accedida: GET /
+17/09/2026 18:31:00 - Ruta accedida: GET /status
+17/09/2026 18:32:00 - Ruta accedida: GET /index.html

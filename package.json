@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-modulo-6-node-express",
+  "version": "1.0.0",
+  "description": "Aplicación base con Node.js y Express para la entrega del Módulo 6.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "backend",
+    "modulo-6"
+  ],
+  "author": "Marcel Navarrete Monrroy",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
