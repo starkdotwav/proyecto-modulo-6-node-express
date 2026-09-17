@@ -88,7 +88,7 @@ Se eligió `index.js` como archivo principal por ser una convención clara y fre
 
 ## Persistencia en archivo plano
 
-El middleware `loggerMiddleware` utiliza `fs.appendFile()` para agregar una línea por cada solicitud recibida. Cada registro incluye fecha, hora, método HTTP y ruta accedida. El archivo se encuentra en `logs/log.txt` e incluye tres accesos iniciales simulados para evidenciar el funcionamiento requerido.
+El middleware `loggerMiddleware` utiliza `fs.appendFile()` para agregar una línea por cada solicitud recibida. Se ejecuta antes de `express.static()`, por lo que registra tanto las rutas dinámicas como los recursos estáticos, por ejemplo `/index.html` y `/styles.css`. Cada registro incluye fecha, hora, método HTTP y ruta accedida. El archivo se encuentra en `logs/log.txt` e incluye tres accesos iniciales simulados para evidenciar el funcionamiento requerido.
 
 Ejemplo de registro:
 

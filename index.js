@@ -11,11 +11,11 @@ const PORT = process.env.PORT || 3000;
 // Permite recibir cuerpos JSON en futuras rutas de la aplicación.
 app.use(express.json());
 
+// Registra todas las solicitudes, incluidas las de recursos estáticos.
+app.use(loggerMiddleware);
+
 // Expone archivos estáticos como HTML y CSS desde la carpeta public.
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Registra en un archivo plano cada acceso a las rutas configuradas.
-app.use(loggerMiddleware);
 
 // Centraliza las rutas públicas del servidor.
 app.use('/', routes);
